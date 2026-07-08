@@ -2,8 +2,10 @@
 Chocolatey is a package manager for windows, but can be quite confusing to install if youre not very familiar with using powershell. I'm making this repo to try and help anyone having issues with the installation of it.
 
 # Installation
-Open powershell as an admiministrator (VERY important as it will not work when not in admin shell). Then, before running the installation command you need to check that the shell is not restricted by running Get-ExecutionPolicy.
-Run Get-ExecutionPolicy , if after running the command you see Restricted as the response, you need to then run this line below. 
+Open powershell as an admiministrator (VERY important as it will not work when not in admin shell). Then, before running the installation command you need to check that the shell is not restricted by running this line below.
+- Get-ExecutionPolicy
+  
+if after running the command you see Restricted as the response, you need to then run this line below. 
 - Set-ExecutionPolicy AllSigned
   
 Now the shell is ready and unrestricted, the install command found below can be ran.
