@@ -3,7 +3,9 @@ Chocolatey is a package manager for windows, but can be quite confusing to insta
 
 # Installation
 Open powershell as an admiministrator (VERY important as it will not work when not in admin shell). Then, before running the installation command you need to check that the shell is not restricted by running Get-ExecutionPolicy.
-Run Get-ExecutionPolicy , if after running the command you see Restricted as the response, you need to then run Set-ExecutionPolicy AllSigned . 
+Run Get-ExecutionPolicy , if after running the command you see Restricted as the response, you need to then run this line below. 
+- Set-ExecutionPolicy AllSigned
+  
 Now the shell is ready and unrestricted, the install command found below can be ran.
 - Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
   
